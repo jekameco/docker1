@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Aplicación full-stack con **NestJS** (backend), **React** (frontend) y **PostgreSQL** (base de datos `docker1`, tabla `users`).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jekameco/docker1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jekameco/docker1/issues"
+  },
+  "homepage": "https://github.com/jekameco/docker1#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
