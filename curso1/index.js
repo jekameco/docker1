@@ -11,8 +11,8 @@ const app  = express();
 app.get('/', async (req,res) => {
     //res.send('funcionando'));
     try {
-        const result = await pool.query('SELECT NOW()');
-        res.send(result.rows[0]);
+        const result = await pool.query('SELECT * from users');
+        res.send(result.rows);
     } catch (error) {
         console.error('Error al conectar a la base de datos', error);
         res.status(500).send('Error al conectar a la base de datos');

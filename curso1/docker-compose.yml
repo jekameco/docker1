@@ -14,8 +14,13 @@ services:
   db:
     image: postgres
     environment:
-    - POSTGRES_PASSWORD=${PGPASSWORD}
+    - POSTGRES_USER=${PGUSER:-postgres}
+    - POSTGRES_PASSWORD=${PGPASSWORD:-postgres}
     - POSTGRES_DB=${PGDATABASE}
-    - POSTGRES_PORT=${PGPORT}
     ports:
       - "5432:5432"
+    volumes:
+      - ./data_sql:/var/lib/postgresql/data
+      - ./seed.sql:/docker-entrypoint-initdb.d/seed.sql:ro
+volumes:
+  data_sql:
