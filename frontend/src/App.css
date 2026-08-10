@@ -1,0 +1,138 @@
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+}
+
+.header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.content {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.form input {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.form-actions,
+.actions,
+.list-header {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.list-header {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+button.secondary:hover:not(:disabled) {
+  background: #cbd5e1;
+}
+
+button.danger {
+  background: #dc2626;
+}
+
+button.danger:hover:not(:disabled) {
+  background: #b91c1c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+th {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.error {
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+
+.muted {
+  color: #64748b;
+}
+
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: 1fr 1.4fr;
+    align-items: start;
+  }
+}
